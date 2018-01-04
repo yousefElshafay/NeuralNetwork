@@ -1,0 +1,8 @@
+Begus 
+{
+
+	a list of neurons that observe me ;
+	The neuron input signal and netoutput signal is not working 
+	probably the update method need to be called 
+	
+}

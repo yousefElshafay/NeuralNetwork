@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{C39BAB31-4BBC-42E2-BDE1-5E1B1CB2A923}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NeuroNetWorkExperiment/Properties/Settings.settings">
+    <Files>
+      <File FileName="NeuroNetWorkExperiment/Form1.cs" Line="1" Column="1" />
+      <File FileName="NeuroNetWorkExperiment/INeuron.cs" Line="1" Column="1" />
+      <File FileName="NeuroNetWorkExperiment/IObserver.cs" Line="1" Column="1" />
+      <File FileName="NeuroNetWorkExperiment/NetWorkLayer.cs" Line="1" Column="1" />
+      <File FileName="NeuroNetWorkExperiment/NeuralNetworkManager.cs" Line="1" Column="1" />
+      <File FileName="NeuroNetWorkExperiment/Neuron.cs" Line="1" Column="1" />
+      <File FileName="NeuroNetWorkExperiment/RegularNeuron.cs" Line="1" Column="1" />
+      <File FileName="NeuroNetWorkExperiment/App.config" Line="6" Column="17" />
+      <File FileName="NeuroNetWorkExperiment/Form1.Designer.cs" Line="1" Column="1" />
+      <File FileName="NeuroNetWorkExperiment/Form1.resx" Line="1" Column="1" />
+      <File FileName="NeuroNetWorkExperiment/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="NeuroNetWorkExperiment/Properties/Resources.resx" Line="1" Column="1" />
+      <File FileName="NeuroNetWorkExperiment/Properties/Settings.settings" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.NeuroNetWorkExperiment PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
