@@ -20,8 +20,6 @@ namespace NeuroNetWorkExperiment
             biasNeuron = new BiasNeuron();
         }
 
-        
-
         public void AddNeuronToLayer(RegularNeuron NextNeuron)
         {
             layerNeurons.Add(NextNeuron);
@@ -32,7 +30,6 @@ namespace NeuroNetWorkExperiment
             layerNeurons.Remove(SelectedNeuron);
         
         }
-
 
         public int  GetLayerSizeInNeurons()
         {
