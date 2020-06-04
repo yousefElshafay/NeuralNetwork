@@ -21,8 +21,7 @@ namespace NeuroNetWorkExperiment
         {
             //intialize neuron 
             OutPutNeuron = new   Dictionary<IObserver,double>();
-            netInputSignal = 0;
-            
+            netInputSignal = 0;          
         }
 
 
@@ -37,7 +36,6 @@ namespace NeuroNetWorkExperiment
         //    OutPutNeuron.Add(newNeuron, ConnectionWeight);
         //}
 
-
         //public void RemoveNeuron(IObserver SelectedNeuron)
         //{
         //    OutPutNeuron.Remove(SelectedNeuron);
@@ -47,24 +45,17 @@ namespace NeuroNetWorkExperiment
         public override void Fire()
         {
             //we call the sigmoid function when firing the neuron 
-
-
             SigmoidFunc(netInputSignal);
-
-
+            
             foreach (KeyValuePair<IObserver,double> Neuron in OutPutNeuron)
             {
                 Neuron.Key.update(OutputSignal,Neuron.Value );// this 0.1 should be the result of the sigmoid function 
-
                 // we need to cast the key , value to the Regular neuroclass
                 Console.WriteLine("neuron id " + Id.ToString() + " with input signal  " + ((RegularNeuron)Neuron.Key).netInputSignal.ToString() + "and  value of  :  " + Neuron.Value.ToString() + " is connecting to  neuron id " + ((RegularNeuron)Neuron.Key).Id.ToString());// for debugging purpose  
-
             }
-          //  netInputSignal = 0.0;//reset neuron netinputSignal 
+            //  netInputSignal = 0.0;//reset neuron netinputSignal 
            // OutPutNeuron.Clear();
         }
-
-
 
         public void update(double InputVal, double ConnectionWeight)
         {
