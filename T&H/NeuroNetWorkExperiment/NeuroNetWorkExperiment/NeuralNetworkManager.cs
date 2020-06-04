@@ -48,16 +48,13 @@ namespace NeuroNetWorkExperiment
                 {
                     regularNeuron = new RegularNeuron();
                     regularNeuron.Id = NeuronsID++;
-                    newLayer.AddNeuronToLayer(regularNeuron);
-                   
+                    newLayer.AddNeuronToLayer(regularNeuron);             
                 }
                 
                 NeuralNetwork.Add(newLayer);
             }
 
-
             //now we will connect the  neurons from each layer to the neuron in the next layer 
-
             Random rand = new Random();//we will use a random number to give unique weights 
             int temp1;
             int temp2;
@@ -68,21 +65,15 @@ namespace NeuroNetWorkExperiment
                 temp2 = i + 1;
                 foreach (RegularNeuron Neuron in NeuralNetwork[temp1].GetLayerNeuron())
                 {
-                    // Neuron.Id = rand.Next(0, 100);
-                   
+                    // Neuron.Id = rand.Next(0, 100);            
                     foreach (RegularNeuron NeuronTObeConnectedWith in NeuralNetwork[temp2].GetLayerNeuron())// for now we will standradize the connection weight to be 0.5 
                     {
                         //NeuronTObeConnectedWith.Id = NeuronsID++;
                         Neuron.AddNeuron(NeuronTObeConnectedWith, (rand.Next(0, 100) / 10));// this connection weight is hard coded for now 
-
-
-                    }
-                    
+                    }                    
                 }
 
-
                 //for testing 
-
 
                 foreach (RegularNeuron Neuron in NeuralNetwork[i].GetLayerNeuron())
                 {
@@ -96,21 +87,12 @@ namespace NeuroNetWorkExperiment
                 //foreach (RegularNeuron Neuron in NeuralNetwork[2].GetLayerNeuron())
                 //{
                 //    Neuron.Fire();
-                //}
-               
-               
+                //}    
             }
         }
         public int GetNumberOfLayers()
         {
-
             return NeuralNetwork.Count;
         }
-
-
-
-       
-
-
     }
 }
